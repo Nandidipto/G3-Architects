@@ -1,13 +1,15 @@
 /* shared styles */
-*{
+* {
     font-family: 'Work Sans', sans-serif;
 }
-.text-lightgray{
+
+.text-lightgray {
     font-weight: 400;
     color: #727272;
     font-size: 1rem;
 }
-.btn-primary{
+
+.btn-primary {
     color: #FFF;
     font-size: 20px;
     color: #FFF;
@@ -17,111 +19,217 @@
     border: none;
     cursor: pointer;
 }
-.section-title{
+
+.section-title {
     font-weight: 700;
     color: #131313;
     font-size: 3rem;
 }
+
 /* header styles */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
-    
+
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #424242;
 }
+
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     color: #131313;
     font-size: 4rem;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
+
 /* main styles */
-main{
+main {
     max-width: 1440px;
     margin: 75px auto;
 }
-.teams-container{
+
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-image{
+
+.teams-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
-.teams-title{
+
+.teams-title {
     font-size: 3rem;
 }
-.teams-title .part1{
+
+.teams-title .part1 {
     color: #727272;
     font-weight: 500;
 }
-.teams-title .part2{
+
+.teams-title .part2 {
     color: #131313;
     font-weight: 700;
 }
-.teams-title .part3{
+
+.teams-title .part3 {
     color: #FF900E;
     font-weight: 700;
 }
+
+/* facts styles */
+.facts-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.facts-container .card-stats {
+    font-weight: 600;
+    color: #424242;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-container .card-title {
+    font-weight: 600;
+    color: #727272;
+    font-size: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* sponsors styles */
+.sponsors {
+    text-align: center;
+}
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.sponsor-img-container img {
+   height: 50px;
+   width: 160px;
+}
+
 /* responsive styles */
 /* small devices */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    .teams-container{
+
+    .teams-container,
+    .facts-container,
+    .sponsor-img-container
+    {
         flex-direction: column;
+        margin-top: 20px;
     }
-    .teams-image{
+
+    .teams-image {
         grid-template-columns: repeat(1, 1fr);
     }
-    .teams-content{
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+
+    .teams-content,
+    {
+    padding-left: 25px;
+    padding-right: 25px;
 }
+
+.title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.facts-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+}
+.sponsor-img-container{
+    padding: 20px ;
+    align-items: center;
+    gap: 50px;
+}
+}
+
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav, .teams-container{
+
+    nav,
+    .teams-container ,.sponsor-img-container{
         flex-direction: column;
     }
-    
+
+    .title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .facts-container {
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+    .sponsor-img-container{
+        padding: 20px ;
+        align-items: center;
+        gap: 50px;
+    }
 }
